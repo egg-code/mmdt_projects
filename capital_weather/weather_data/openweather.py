@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 from weather_data.config import WEATHER_API_KEY
 
+# Class to get weather data from openweathermap API
 class WeatherAPI:
     BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 

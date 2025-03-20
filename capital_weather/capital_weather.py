@@ -4,6 +4,8 @@ import json
 import pandas as pd
 
 # Setting up the API key
+import os
+from dotenv import load_dotenv
 load_dotenv()
 
 weather_api_key = os.getenv('weather_api_key')
@@ -64,7 +66,7 @@ weather_df = pd.concat([weather_data_df, weather_data_coord_df], axis=0)
 weather_df.reset_index(drop=True, inplace=True)
 
 # Finally merging the weather data with the cities data
-cities_weather_df = pd.merge(cities_df, weather_df, on='City', how='inner')
+cities_weather_df = pd.merge(cities_df, weather_df, on='City', how='left')
 
 # Dropping duplicated rows
 cities_weather_df = cities_weather_df.drop_duplicates(keep='first')

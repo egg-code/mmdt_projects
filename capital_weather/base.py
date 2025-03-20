@@ -5,6 +5,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 class Base(DeclarativeBase):
     pass
 
+# Create a class for the table capital_weather
 class Capital_Weather(Base):
     __tablename__ = "capital_weather"
 

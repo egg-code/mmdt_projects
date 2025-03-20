@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 from weather_data.config import GEO_USERNAME
 
+# Class to get capital cities data from geonames API
 class GeoNamesAPI:
     BASE_URL = "http://api.geonames.org/searchJSON"
     

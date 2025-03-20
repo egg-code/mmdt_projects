@@ -29,7 +29,7 @@ if user_input == 'Y':
         Base.metadata.create_all(engine) # create table from base.py
         cities_weather_df.to_sql('capital_weather', engine, if_exists='replace', index=False)
         print("Data loaded into Postgres")
-    except Exception as e:
-        print(e)
+    except Exception as er:
+        print(er)
 else:
-    print("You cancelled the operation")
+    print("Wow! You are not loading data into Postgres!")
