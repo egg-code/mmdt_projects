@@ -2,7 +2,7 @@ name: Demo mmdt
 on:
   push:
     branches:
-      -exercise
+      - exercise
   workflow_dispatch:
 jobs:
   demo_mmdt:
