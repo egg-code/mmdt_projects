@@ -20,8 +20,15 @@ This project retrieves and processes real-time weather data for capital cities a
 
 ## Project Structure
 
-<pre lang="markdown"> ``` capital_weather/ ├── base.py # Database model and connection setup using SQLAlchemy ├── capital_weather.py # Fetches and processes city and weather data via APIs ├── main.py # Runs the full data pipeline ├── weather_data/ # (Optional) Directory for saving raw or processed data ├── requirements.txt # Lists required Python packages └── README.md # Project documentation ``` </pre>
-
+```
+capital_weather/
+├── base.py                 # Database model and connection setup using SQLAlchemy
+├── capital_weather.py      # Fetches and processes city and weather data via APIs
+├── main.py                 # Runs the full data pipeline
+├── weather_data/           # (Optional) Directory for saving raw or processed data
+├── requirements.txt        # Lists required Python packages
+└── README.md               # Project documentation
+```
 
 ## Technologies Used
 
