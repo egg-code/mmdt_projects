@@ -5,7 +5,8 @@ This repository contains a collection of practical projects created as part of t
 ## 📁 Projects Included
 
 - `capital_weather/` — Weather data pipeline combining GeoNames and OpenWeatherMap APIs with PostgreSQL storage.
-- *(More projects to be added or described here)*
+- `city_weather_covid/`
+- `walmart_sale/` — E.T.L
 
 ## 🛠️ Technologies Used
 
